@@ -1,22 +1,123 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .container{
-    background-image: url('Images/coffe.jpg');
+    background-image: url('Images/IMG-4.avif');
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgb(236, 255, 22);
 
 }
+
+
 .container .item{
-    height: 300px;
-    width: 240px;
-    background-color: black;
-    color: wheat;
-    
+    /* height: 350px; */
+    width: 450px;
+    background: transparent;
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin: 10px;
+    gap: 30px;
+    border-radius: 50px; 
+    font-size: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+   
+}
+.item h1{
+    font-size: 50px;
+    padding-bottom: 10px;
+    color: rgb(255, 255, 255);
+
+}
+.item .input-box{
+    width: 100%;
+    height: 50px;
+    /* background: salmon; */
+    display: flex;
+    align-items: center;
+   
+
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgb(228, 221, 221);
+    border-radius: 40px;
+    font-size: 18px;
+    color: #fff;
+    padding: 20px 45px 20px 25px;
+   
+}
+.input-box input::placeholder{
+    color: #fff;
+
+}
+
+/* Icons Css  */
+
+.input-box i{
+    position: absolute;
+    right: 80px;
+    color: #fff;
+}
+
+
+.item .remember-forget label{
+    margin-right: 50px;
+    color: #fff;
+ 
+}
+.item .remember-forget a{
+    color: #fff;
+    text-decoration: none;
+}
+.item .remember-forget a:hover{
+    text-decoration: underline;
+
+}
+
+/* Login Button Css */
+
+.item .btn{
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 550;   
+    color: rgb(165, 222, 132);;
+
+}
+
+.item .register-link{
+    font-size: 20px;
+    color: #fff;
+}
+.item .register-link a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 550;
+}
+.item .register-link a:hover{
+    text-decoration: underline;
 }
